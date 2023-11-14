@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
+import '../App.css';
 
 const Location = () => {
   const {dispatch } = useContext(AppContext);
@@ -13,15 +14,12 @@ const Location = () => {
     
 
   return (
-        <div className='alert alert-secondary'> Location {
-      <select name="Location" id="Location" onChange={event=>changeLocation(event.target.value)}>
-        <option value="£">Uk(£)</option>
-        <option value="₹">India(₹)</option>
-        <option value="€">Europe(€)</option>
-        <option value="CAD">Canada(CAD)</option>
+      <select className="dropdown" name="Location" id="Location" onChange={event=>changeLocation(event.target.value)}>
+        <option value="£">(£ Pound)</option>
+        <option value="₹">(₹ Ruppee)</option>
+        <option value="€">(€ Euro)</option>
+        <option value="CAD">($ Dollar)</option>
       </select>	
-      }	
-    </div>
     );
 };
 

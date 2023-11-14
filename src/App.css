@@ -66,3 +66,35 @@
     cursor: pointer;
     border-radius: 50%; /* Makes the button round */
   }
+
+  /* Styles for the dropdown container */
+.dropdown {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    padding: 10px; /* Spacing within the dropdown */
+    width: 200px; /* Set a fixed width or make it responsive as needed */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Add a subtle shadow */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+  }
+  
+  /* Styles for the dropdown options */
+  .dropdown option {
+    background-color: green; /* White background for options */
+    color: black; /* Text color for options */
+    padding: 10px; /* Spacing within the options */
+    border-bottom: 1px solid #4CAF50; /* Green line between options */
+  }
+  
+  /* Style to remove the last border */
+  .dropdown option:last-child {
+    border-bottom: none;
+  }
+  
+  /* Style the dropdown on hover */
+  .dropdown option:hover {
+    background-color: white;
+    color: black; /* Slightly darker green on hover */
+  }
+  
